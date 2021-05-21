@@ -1,0 +1,9 @@
+@import url("header.css");
+
+* {
+	transform: 0.3s;
+}
+
+body {
+	margin: 0;
+}
