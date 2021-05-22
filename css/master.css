@@ -1,9 +1,8 @@
 @import url("header.css");
-@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
 
 /* 基本的なアニメーションの継続時間 */
 * {
-	transition: 0.3s;
+	transition: 0.1s;
 }
 
 
@@ -26,5 +25,5 @@
 
 /* 装飾フォント（英字） */
 .decorative {
-	font-family: 'Bungee Shade', sans-serif;
+	/* font-family: 'Bungee Shade', sans-serif; */
 }

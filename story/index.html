@@ -3,17 +3,48 @@
 
 	<header>
 		<meta charset="UTF-8">
-		<title>Story｜2021年 東京学芸大学附属高校 66F公式ホームページ</title>
+		<title>Story｜ニゲラ咲く春｜2021年辛夷祭 東京学芸大学附属高校66F 公式ホームページ</title>
 		<link rel="stylesheet" href="../css/story.css" >
+		<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+		<style>
+			.circle {
+				position: fixed;
+				top: 50vh;
+				left: 50vw;
+				transform: translate(-50px, -50px);
+				transform-origin: left top;
+				background-color: blueviolet;
+				width: 100px;
+				height: 100px;
+				border-radius: 50%;
+				z-index: 1;
+			}
+		</style>
+
+		<script>
+
+			window.onscroll = function() {
+				var circle = document.getElementById('circle');
+				var scroll = 1 + $(window).scrollTop() / $(window).height() * 3;
+				circle.style.transform = 'scale(' + scroll + ') translate(-50px, -50px)';
+			}
+
+		</script>
+
 	</header>
 
 	<body class="no-gap">
 		
-		<div id="page-title">
-			<h1 class="decorative">
-				Story
-			</h1>
-		</div>
+		<section style="height: 100vh; background-color: white;">
+			<div class="circle" id="circle">
+				
+			</div>
+		</section>
+
+		<section style="position: relative; height: 100vh; background-color:chartreuse; z-index: 2;">
+			
+		</section>
 
 	</body>
 
